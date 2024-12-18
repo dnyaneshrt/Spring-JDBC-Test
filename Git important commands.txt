@@ -1,0 +1,112 @@
+Git & Github.
+============
+1) Git & Github Setup.
+https://git-scm.com/downloads
+
+2) Create your own (project) repository and push it on github.
+3) Clone repo from github into local machine.
+
+
+
+git pull= git fetch + git merge
+
+Git important commands.
+=======================
+1)git --version
+-this command is used to get installed git version in your machine.
+
+2)git init
+-git init command is used to intialize the git repository.
+
+3)git clone <url>
+-create a local copy of project that already exists remotely.
+
+3A)git clone <url> <filename>
+-project will be cloned with given file name.
+
+4)git status 
+-this command is used to get the current status of git.
+-means ,whether have you made any changes in it or not??
+
+5)git diff <file name>
+-git diff command is used to get which changes you have made in the mentioned file. when it is unstaged.
+
+6)git add .
+-if you want to commit the code, the code must be in staging area.(shoud not be in unstage area)
+-git add commmand is used to get all files in staging area.
+
+6.a)git add <file name>
+-to add specific file in staging area.
+
+6.b) git rm --cached <file name>
+-to remove specific file from staging area.
+
+7) git commit -m "<commit message>"
+-git commit command is used to commit those changes permanantly.
+
+8)git log
+-git log command gives us all history about git commands happened in project.
+
+8.a) git log --oneline.
+shows logs in one line with commit-hash and commit message only
+
+9)git log -<no.of records> 
+-by using this command you can retrieve only last 5 records
+
+10)git show eb84510b96646bfb4d79126117470445277261b3
+-this  code is called as commmit has or commit id.
+-with the hep of that commit id,we can see what  exactlty the modifications we have done in  that file.
+
+11)git branch
+-git branch command is used to get the current branch where i am.
+
+12)git checkout  -b MyNewBranch
+-this command is used to create a new branch
+
+13)git branch -d MyNewBranch
+-this command is used to delete the branch.
+-but before deleting the branch,you must be there in Master branch
+
+14)git branch BranchName
+-this command is used to create a new branch
+
+15)git checkout BranchName
+-to shift and check into that branch.
+
+16) git merge BranchName
+-this command is used to merge new Branch.
+-firstof all we willhave to come inside inside master or another branch using  " git checkout master " command.
+
+17)git branch -d <BranchName> :- to delete the specific branch
+-But  we need to be inside diff branch. not in same who is getting deleted.
+-this  command is used to delete the specified branch name.
+
+18)git reset --hard HEAD
+-command is used to reset(undo) the latest commit.
+
+19)git reset --soft (second last Commit id)
+-this commit is also used to undo the latest commit,but in this case the code changes will remain same.
+
+20)git restore --staged <filename>
+-this command will remove the mentioned file from stage area.
+
+21)git restore <filename>
+-this command is used to restore that command completely.
+
+22)git pull
+The git pull command is used to fetch and download content from a remote repository 
+and immediately update the local repository to match that content.
+
+23)git push
+-this command is used to push the committed code to github repository.
+
+24) git commit --amend
+-this command is used to commit the code in existing commit
+
+25)git show <commit-hash>
+shows details about corresponding commit-hash.
+
+26) git fetch: command that tells your local git to retrieve the latest meta-data from the original(yet doesn't do any file transferring. it's more like just checking to see if there are any changes avaiable)
+
+1) Git branch -r
+Will show all available branches on remote.
