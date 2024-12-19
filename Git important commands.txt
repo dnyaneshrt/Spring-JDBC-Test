@@ -64,8 +64,8 @@ shows logs in one line with commit-hash and commit message only
 -this command is used to create a new branch
 
 13)git branch -d MyNewBranch
--this command is used to delete the branch.
--but before deleting the branch,you must be there in Master branch
+-this command is used to delete the branch from Local machine.
+-but before deleting the branch, you must be there in another branch
 
 14)git branch BranchName
 -this command is used to create a new branch
