@@ -109,4 +109,4 @@ shows details about corresponding commit-hash.
 26) git fetch: command that tells your local git to retrieve the latest meta-data from the original(yet doesn't do any file transferring. it's more like just checking to see if there are any changes avaiable)
 
 1) Git branch -r
-Will show all available branches on remote.
+Will show all available branches on remote(Github/Gitlab/Bitbucket).
